@@ -1,0 +1,8 @@
+The simple json package was created by npm init command in terminal which took 
+basic information of server.
+
+Secondly we changed directory by cd 'dirname' and installed express package by npm
+using command npm i express. We can clear terminal by writing clear.
+
+We also installed nodemon by npm i nodemon to track the changes in program
+It helps use not to run program again and again
