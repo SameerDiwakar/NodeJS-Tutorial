@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 
 // Define the MongoDB connection URL
-const mongoURL = "mongodb://localhost:27017/hotels";
+// const mongoURL = "mongodb://localhost:27017/hotels"; //Local Database
+const mongoURL ="mongodb+srv://diwakarsameer27:qwerty1234@hotel.fge5snc.mongodb.net/";  //MongoDB Atlas Online Database
 
-// Set up MongoDB connection
+// Set up MongoDB connectionet
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
