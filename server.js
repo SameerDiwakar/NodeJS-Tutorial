@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const db = require("./1_db");
+const db = require("./4_Mongoose/db");
 require('dotenv').config();
 
 const bodyParser = require("body-parser");
@@ -13,8 +13,8 @@ app.get("/", function (req, res) {
 });
 
 // Import the router files
-const personRoutes = require("../5_Routes/personRoutes");
-const menuRoutes = require('../5_Routes/menuRoutes');
+const personRoutes = require("./Routes/personRoutes");
+const menuRoutes = require('./Routes/menuRoutes');
 
 
 // Use the routers
