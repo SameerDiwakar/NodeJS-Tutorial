@@ -30,7 +30,6 @@ app.get("/", function (req, res) {
 // Import the router files
 const personRoutes = require("./Routes/personRoutes");
 const menuRoutes = require("./Routes/menuRoutes");
-const { jwtAuthMiddleware } = require("./jwt");
 
 // Use the routers
 app.use("/person", personRoutes);
