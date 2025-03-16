@@ -7,6 +7,7 @@ const studentSchema = new Schema({
     email:{type:String,required:false,unique:true},
     phone:{type:String,required:false},
     address:{type:String,required:false},
+    photo:{type:String} //store base64 encoded data
 })
 
 module.exports = mongoose.model('Student',studentSchema);

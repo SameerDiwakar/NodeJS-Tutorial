@@ -18,12 +18,14 @@ const upload = multer({storage})
 router.post('/create',upload.single('photo'),async (req,res) => {
     try {
         const {name,age,email,phone,address} = req.body;
+        const photopath = req.file ? req.file.path : null;
         const newStudent =new Student({
             name,
             age,
             email,
             phone,
-            address
+            address,
+            photo:photopath,
         });
         await newStudent.save();
         res.status(201).json({message:'Student Created', student:newStudent});
