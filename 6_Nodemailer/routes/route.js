@@ -1,8 +1,9 @@
 const router = require('express').Router();
-const { signup, getBill } = require('../controller/appController'); // Import the functions
+const { nodemailerTest, nodemailerGmail, brevoAPI } = require('../controller/appController'); 
 
-router.post('/user/signup', signup); // Use the signup function as the route handler
+router.post('/nodemailerTest', nodemailerTest); 
 
-router.post('/product/getBill', getBill); // Use the getBill function as the route handler
+router.post('/nodemailerGmail', nodemailerGmail); 
+router.post('/brevoAPI', brevoAPI); 
 
 module.exports = router;
